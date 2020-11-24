@@ -44,7 +44,7 @@ void setup()   /****** SETUP: RUNS ONCE ******/
   // Set the PA Level low to prevent power supply related issues since this is a
   // getting_started sketch, and the likelihood of close proximity of the devices. RF24_PA_MAX is default.
   myRadio.setPALevel(RF24_PA_MIN);
-  //  myRadio.setPALevel(RF24_PA_MAX);  // Uncomment for more power
+  // myRadio.setPALevel(RF24_PA_MAX);  // Uncomment for more power
 
   myRadio.openWritingPipe( addresses[0]); // Use the first entry in array 'addresses' (Only 1 right now)
   delay(1000);
